@@ -104,11 +104,6 @@ body {
 .compass-btn{
     width: 16rem;
 }
-.banner_text {
-    margin-top: 9rem;
-    width: 24rem;
-    margin-right: 11rem;
-}
 
 .h1, .h2, .h3, h4{
     font-family: 'Golos Text', sans-serif;
@@ -381,4 +376,95 @@ body {
 #section-partnership{
     margin-top: 5rem;
     margin-bottom: 5rem;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .banner_text {
+        margin-top: 3rem;
+        width: 13rem;
+        margin-left: 16rem;
+        font-size: 10px;
+    }
+    .compass-btn{
+        width: 10rem;
+    }
+    .card-img-wrapper:hover .activity-title,
+    .card-img-wrapper:active .activity-title{
+        top: 9rem;
+    }
+    .card-img-wrapper .activity-title {
+        transition: all 0.5s ease-out 0s;
+        position: absolute;
+        left: 2rem;
+        top: 9rem;
+        color: white;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 601px) {
+    .banner_text {
+        margin-top: 3rem;
+        width: 15rem;
+        margin-left: 5rem;
+        font-size: 10px;
+    }
+    .compass-btn{
+        width: 10rem;
+    }
+    .card-img-wrapper:hover .activity-title,
+    .card-img-wrapper:active .activity-title{
+        top: 9rem;
+    }
+    .card-img-wrapper .activity-title {
+        transition: all 0.5s ease-out 0s;
+        position: absolute;
+        left: 2rem;
+        top: 9rem;
+        color: white;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .banner_text {
+        margin-top: 3rem;
+        width: 13rem;
+        margin-left: 2rem;
+        font-size: 10px;
+    }
+    .compass-btn{
+        width: 10rem;
+    }
+}
+@media only screen and (min-width: 1001 ){
+    .banner_text {
+        margin-top: 5rem;
+        width: 16rem;
+        margin-left: 5rem;
+    }
+    .compass-btn{
+        width: 12rem;
+    }
+}
+@media only screen and (min-width: 1201 ) {
+    .banner_text {
+        margin-top: 25%;
+        width: 20rem;
+        margin-right: 11rem;
+    }
+    .compass-btn{
+        width: 14rem;
+    }
+}
+@media only screen and (min-width: 1301px) {
+    .banner_text {
+        margin-top: 9rem;
+        width: 24rem;
+        margin-right: 11rem;
+    }
+    .compass-btn{
+        width: 16rem;
+    }
 }
