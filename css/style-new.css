@@ -44,8 +44,42 @@ body {
     color: var(--body-text-purple);
     /* background-color: var(--light-purple); */
 }
+.ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.ul li {
+    list-style-type:disc;
+}
+
+.navbar {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.navbar-expand-lg .navbar-nav {
+    align-items: center;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: rgba(0,0,0,.9);
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 5px 20px;
+    font-weight: 500;
+    color: rgba(0,0,0,.9);
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+    color: rgba(0,0,0,.9);
+}
+
 .navbar-brand img {
-    width: 240px;
+    width: 200px;
 }
 .p-relative{
     position: relative;
@@ -55,7 +89,8 @@ body {
 #section-compass {
     position: relative;
     overflow: hidden;
-    background: #FEDC02;
+    background: var(--yellow);
+    margin-top: 66px;
     /* background-image: url(../assets/compass.png); */
 }
 
@@ -70,7 +105,7 @@ body {
     width: 16rem;
 }
 .banner_text {
-    margin-top: 12rem;
+    margin-top: 9rem;
     width: 24rem;
     margin-right: 11rem;
 }
@@ -159,7 +194,7 @@ body {
 }
 
 #section-benefit .card:hover{
-    background-color: #FEDC02;
+    background-color: var(--yellow);
 }
 
 #section-activity{
@@ -170,16 +205,16 @@ body {
     position: inherit;
 }
 .card-img-wrapper .activity-title{
-    transition: all 0.3s ease-out 0s;
+    transition: all 0.5s ease-out 0s;
     position: absolute;
     left: 2rem;
-    top: 21rem;
+    top: 20rem;
     color:white;
 }
 @media(hover: hover) and (pointer: fine) {
     .card-img-wrapper:hover .activity-title,
     .card-img-wrapper:active .activity-title{
-        top: 10rem;
+        top: 9rem;
     }
 }
 
