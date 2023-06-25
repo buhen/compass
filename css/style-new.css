@@ -199,7 +199,7 @@ body {
     overflow: hidden;
     position: inherit;
 }
-.card-img-wrapper .activity-title{
+/* .card-img-wrapper .activity-title{
     transition: all 0.5s ease-out 0s;
     position: absolute;
     left: 2rem;
@@ -211,7 +211,7 @@ body {
     .card-img-wrapper:active .activity-title{
         top: 9rem;
     }
-}
+} */
 
 #section-activity .card{
     background-color: #F0FAE9;
@@ -256,6 +256,12 @@ body {
 .bpoint-left{
     background-image: url(../assets/arrow_green.png);
     background-repeat: no-repeat;
+    /* backdrop-filter: blur(6px);
+    filter:blur(4px);
+    -o-filter:blur(4px);
+    -ms-filter:blur(4px);
+    -moz-filter:blur(4px);
+    -webkit-filter:blur(4px); */
 }
 .bpoint-right{
     background-image: url(../assets/arrow_red.png);
@@ -273,9 +279,14 @@ body {
     color: #839BC0;
     font-size: 2rem;
 }
+#accordion{
+
+
+}
 #section-bpoint .card{
     opacity: 0.9;
     background-color: #fff;
+
 }
 #section-bpoint .table{
     margin:0;
@@ -288,7 +299,7 @@ body {
 }
 
 #section-detail {
-    margin-top: 5rem;
+    /* margin-top: 5rem; */
     padding: 5rem 0;
 }
 .card_1{
@@ -377,57 +388,78 @@ body {
     margin-top: 5rem;
     margin-bottom: 5rem;
 }
-
+.activity-title-auto{
+    height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease-out 0s;
+    line-height: 1.2;
+    font-size: 1rem;
+}
+.card-img-wrapper:hover .activity-title-auto,
+.card-img-wrapper:active .activity-title-auto{
+    height: 160px;
+}
+.card-img-wrapper .activity-title {
+    transition: all 0.5s ease-out 0s;
+    position: absolute;
+    left: 2rem;
+    bottom: 0;
+    font-size: 1rem;
+    color: white;
+}
+.card-deck {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: .5rem;
+}
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media (min-width: 1301px) {
     .banner_text {
-        margin-top: 3rem;
-        width: 13rem;
-        margin-left: 16rem;
-        font-size: 10px;
+        margin-top: 9rem;
+        width: 24rem;
+        margin-right: 11rem;
     }
     .compass-btn{
-        width: 10rem;
+        width: 16rem;
     }
-    .card-img-wrapper:hover .activity-title,
-    .card-img-wrapper:active .activity-title{
-        top: 9rem;
+    .h3,h3{
+        font-size: 1.7rem;
     }
-    .card-img-wrapper .activity-title {
-        transition: all 0.5s ease-out 0s;
-        position: absolute;
-        left: 2rem;
-        top: 9rem;
-        color: white;
+
+}
+@media screen and (max-width: 1300px) {
+    .banner_text {
+        margin-top: 25%;
+        width: 20rem;
+        margin-right: 11rem;
+    }
+    .compass-btn{
+        width: 14rem;
+    }
+    .h3,h3{
+        font-size: 1.5rem;
     }
 }
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 601px) {
+@media screen and (max-width: 1200.98px){
     .banner_text {
-        margin-top: 3rem;
-        width: 15rem;
+        margin-top: 5rem;
+        width: 16rem;
         margin-left: 5rem;
-        font-size: 10px;
     }
     .compass-btn{
-        width: 10rem;
+        width: 12rem;
     }
-    .card-img-wrapper:hover .activity-title,
-    .card-img-wrapper:active .activity-title{
-        top: 9rem;
+    .h3,h3{
+        font-size: 1.2rem;
     }
-    .card-img-wrapper .activity-title {
-        transition: all 0.5s ease-out 0s;
-        position: absolute;
-        left: 2rem;
-        top: 9rem;
-        color: white;
+    .promo-woman {
+        width: 600px;
+        right: 0;
     }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media screen and (max-width: 991.98px) {
     .banner_text {
         margin-top: 3rem;
         width: 13rem;
@@ -437,34 +469,49 @@ body {
     .compass-btn{
         width: 10rem;
     }
+    /* .card-img-wrapper:hover .activity-title,
+    .card-img-wrapper:active .activity-title{
+        top: 20px;
+    } */
+    .h3,h3{
+        font-size: 1.2rem;
+    }
+    .card-img-wrapper .activity-title {
+        line-height: 1.2;
+        font-size: 12px;
+    }
+    .promo-woman {
+        width: 600px;
+        right: 0;
+    }
 }
-@media only screen and (min-width: 1001 ){
+
+@media screen and (max-width: 767px){
     .banner_text {
-        margin-top: 5rem;
-        width: 16rem;
+        margin-top: 3rem;
+        width: 15rem;
         margin-left: 5rem;
-    }
-    .compass-btn{
-        width: 12rem;
+        font-size: 10px;
     }
 }
-@media only screen and (min-width: 1201 ) {
+@media screen and (max-width:575.98px) {
     .banner_text {
-        margin-top: 25%;
-        width: 20rem;
-        margin-right: 11rem;
+        margin-top: 3rem;
+        width: 13rem;
+        margin-left: 16rem;
+        font-size: 10px;
     }
     .compass-btn{
-        width: 14rem;
+        width: 10rem;
     }
-}
-@media only screen and (min-width: 1301px) {
-    .banner_text {
-        margin-top: 9rem;
-        width: 24rem;
-        margin-right: 11rem;
+    .h3,h3{
+        font-size: 1rem;
     }
-    .compass-btn{
-        width: 16rem;
+    #section-promo {
+        height: 400px;
+    }
+    .promo-woman{
+        width: 439px;
+        right: 0;
     }
 }
