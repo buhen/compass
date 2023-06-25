@@ -30,6 +30,9 @@
 .yellow{
     color: var(--yellow);
 }
+.compass-blue{
+    color: var(--blue);
+}
 /* ------Common-Css------------- */
 
 html{scroll-behavior:smooth}
@@ -325,16 +328,29 @@ body {
 #section-detail .card{
     border: 0px;
     background-color: transparent;
+    margin-bottom: 30px;
 }
+
 #section-detail .card-header{
     background-color: transparent;
 }
 
+#section-detail .card:hover {
+    background-color: #231F20;
+    color:white;
+}
+#section-detail .card .about-card{
+    display: none;
+}
+#section-detail .card:hover .about-card{
+    display: block;
+}
 #section-detail .card-body{
 
 }
 #section-detail .card-footer{
     background-color: transparent;
+
 }
 
 .footer-bottom{
