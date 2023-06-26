@@ -514,11 +514,11 @@ body {
     .banner_text {
         margin-top: 3rem;
         width: 13rem;
-        margin-left: 16rem;
         font-size: 10px;
     }
     .compass-btn{
         width: 10rem;
+        margin: auto;
     }
     .h3,h3{
         font-size: 1rem;
@@ -529,5 +529,16 @@ body {
     .promo-woman{
         width: 439px;
         right: 0;
+    }
+    .activity-title-auto {
+        height: auto;
+        overflow: hidden;
+        transition: all 0.5s ease-out 0s;
+        line-height: 1.2;
+        font-size: 1rem;
+        padding-right: 2rem;
+    }
+    .footer-content-bike img{
+        padding:0 30px;
     }
 }
